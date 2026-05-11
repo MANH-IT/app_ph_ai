@@ -1,0 +1,91 @@
+name: apps_health_ai
+description: "Ứng dụng theo dõi sức khỏe AI - HealthAI (MVP 9 trang → Scale 16 trang)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  pinput: ^5.0.0
+  intl: ^0.20.2
+  # UI & Animation
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  lottie: ^3.2.0
+
+  # Charts
+  fl_chart: ^0.70.1
+
+  # State Management
+  riverpod: ^2.6.1
+  flutter_riverpod: ^2.5.1
+
+  # mã hóa
+  crypto: ^3.0.5
+
+  # Navigation
+  go_router: ^14.3.0
+
+  # BLE (ESP32)
+  flutter_blue_plus: ^1.33.2
+
+  # AI/ML
+  google_ml_kit: ^0.20.0
+  tflite_flutter: ^0.11.0
+
+  # Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Secure Storage
+  flutter_secure_storage: ^9.2.2
+
+  # Notifications
+  flutter_local_notifications: ^17.2.2
+
+  # Monitoring
+  # sentry_flutter: ^8.9.0
+  image_picker: ^1.2.0
+
+  share_plus: ^10.0.0          # ← THÊM
+  connectivity_plus: ^6.0.0    # ← THÊM (Kiểm tra mạng)
+  pdf: ^3.10.8                 # ← THÊM
+  printing: ^5.12.0            # ← (tùy chọn, để in PDF đẹp hơn)
+  # flutter_tts: ^4.0.2          # ← THÊM
+
+  # Utils - ĐÃ XÓA intl (Flutter tự quản lý)
+  # intl: ^0.19.0
+  # Setting
+  package_info_plus: ^8.0.0
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.9
+  hive_generator: ^2.0.1
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/animations/
+    - assets/icons/
+    - assets/images/
+
+
+  # fonts:  # BỎ COMMENT KHI DÙNG
+  #   - family: SVN-Roboto
+  #     fonts:
+  #       - asset: assets/fonts/vietnamese/SVN-Roboto/Roboto-Regular.ttf
+  #       - asset: assets/fonts/vietnamese/SVN-Roboto/Roboto-Bold.ttf
+  #         weight: 700
